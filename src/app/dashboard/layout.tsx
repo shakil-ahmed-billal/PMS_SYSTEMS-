@@ -10,11 +10,10 @@ const layout = async ({
   const cookieStore = await cookies();
   const defaultOpen = cookieStore.get("sidebar_state")?.value === "true";
   return (
-    <div>
+    <div className="w-full ">
       <SidebarProvider defaultOpen={defaultOpen}>
         <AppSidebar />
-        <main className="flex min-h-screen p-5 gap-5">
-          <SidebarTrigger />
+        <main className="flex min-h-screen w-12/12">
           {children}
         </main>
       </SidebarProvider>

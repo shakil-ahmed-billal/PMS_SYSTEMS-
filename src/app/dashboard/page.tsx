@@ -2,10 +2,8 @@ import Header from "@/components/header/Header";
 
 const page = () => {
   return (
-    <div>
-      <header>
+    <div className="w-12/12">
         <Header />
-      </header>
     </div>
   );
 };
